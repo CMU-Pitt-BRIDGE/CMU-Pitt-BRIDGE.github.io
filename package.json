@@ -10,7 +10,7 @@
     "deploy": "dotenv -- docusaurus deploy",
     "deploy:development": "dotenv -e .env.development -- npm run deploy",
     "deploy:test": "dotenv -e .env.test -- npm run deploy",
-    "deploy:production": "dotenv -e .env.production -- npm run deploy"
+    "deploy:production": "dotenv -e .env.production -- npm run deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
