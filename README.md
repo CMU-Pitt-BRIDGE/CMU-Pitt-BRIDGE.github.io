@@ -39,3 +39,12 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Environment Variables
+
+Remember to copy the `.env`, `.env.production`, `.env.development`, and `.env.test` files and rename them to `.env.local`, `.env.production.local`, `.env.development` and `.env.test.local` respectively.
+
+- Running `NODE_ENV=development npm ...` will load `.env.development.local`.
+- Running `NODE_ENV=test npm ...` will load `.env.test.local`.
+- Running `NODE_ENV=production ...` will load `.env.production.local`.
+- If `NODE_ENV` is not specified, it defaults to `development`.

@@ -1,3 +1,6 @@
+const environment = process.env.NODE_ENV || "development";
+require("dotenv").config({ path: `./.env.${environment}.local` });
+
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
@@ -20,6 +23,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   projectName: "CMU-Pitt-BRIDGE.github.io", // Usually your repo name.
   organizationName: "CMU-Pitt-BRIDGE", // Usually your GitHub org/user name.
+  deploymentBranch: "main",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
