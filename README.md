@@ -48,3 +48,11 @@ Remember to copy the `.env`, `.env.production`, `.env.development`, and `.env.te
 - Running `NODE_ENV=test npm ...` will load `.env.test.local`.
 - Running `NODE_ENV=production ...` will load `.env.production.local`.
 - If `NODE_ENV` is not specified, it defaults to `development`.
+
+## Blog
+
+Currently, blog is disabled. Please change the `docusaurus.config.js` configuration to re-enable:
+
+1. In `presets` remove `blog: false,` and uncomment the lines before it.
+2. In `themeConfig` uncomment the line: `// { to: "/blog", label: "Blog", position: "left" },
+`

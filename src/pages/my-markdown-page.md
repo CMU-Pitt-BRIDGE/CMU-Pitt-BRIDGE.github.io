@@ -1,3 +1,7 @@
-# My Markdown Page
+---
+title: Markdown page example
+---
 
-This is a Markdown page.
+## Markdown page example
+
+You don't need React to write simple standalone pages.
